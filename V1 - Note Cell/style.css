@@ -67,14 +67,23 @@ h6 {
 
 /* END RESET */
 
+h1 {
+    user-select: none;
+}
+
+#cell,
+#note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #cell {
     width: 50vmin;
     aspect-ratio: 2/1;
     border-radius: 5vmin;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: solid black 6px;
     background-color: green;
 }
 
@@ -82,8 +91,6 @@ h6 {
     width: 30%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: solid white 6px;
     background-color: lightcoral;
 }
