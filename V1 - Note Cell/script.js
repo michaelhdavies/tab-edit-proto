@@ -8,20 +8,28 @@ init();
 
 function init() {
     updateNote();
-}
+};
+
+function reverseNote() {
+    noteBool = !noteBool;
+};
 
 function updateNote() {
     if (noteBool === false) {
         n.style.visibility = 'hidden';
     } else {
-        n.style.visibility = 'visible'
-    }
-}
+        n.style.visibility = 'visible';
+    };
+};
+
+function changeNote() {
+    reverseNote();
+    updateNote();
+};
 
 c.addEventListener('click', noteClick)
 
 function noteClick() {
-    noteBool = !noteBool;
-    updateNote();
+    changeNote();
     console.log(`Click Logged`)
-}
+};
